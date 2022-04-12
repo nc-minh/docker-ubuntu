@@ -6,3 +6,8 @@ sudo snap install docker
 ```
 docker --version
 ```
+
+## Check info
+```
+docker info
+```
