@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+    my-node-image-1:
+     build: 
+      context: .
+      dockerfile: Dockerfile
+     container_name: my-node-image-1
+     ports:
+       - '4001:4000'
