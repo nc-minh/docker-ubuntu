@@ -54,3 +54,20 @@ docker stop Containers_ID
 ```
 docker run -d -p 8080:80 --name myName nameDefault
 ```
+## Access in containers is running
+```
+docker exec -it name bash
+```
+
+## Print out the log of running containers
+```
+docker logs containersName
+```
+## Build
+```
+docker build -t imageName pathOfDockFile(. is current folder)
+```
+## Docker-compose
+```
+docker-compose up -d
+```
