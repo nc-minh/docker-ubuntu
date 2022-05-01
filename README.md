@@ -40,6 +40,10 @@ docker rmi REPOSITORY
 ```
 docker run -it -p 8080:80 nginx
 ```
+## Exit the command line but the container is still running
+```
+Ctrl + P, Ctrl + Q
+```
 ## Run containers and hide log in containers at cmd, just return containers id
 ```
 docker run -d -p 8080:80 nginx
@@ -49,6 +53,10 @@ docker run -d -p 8080:80 nginx
 ```
 docker stop Containers_ID
 ```
+## Delete a running container
+```
+docker rm -f container_Name|container_ID
+```
 
 ## Set name of containers
 ```
@@ -57,6 +65,10 @@ docker run -d -p 8080:80 --name myName nameDefault
 ## Access in containers is running
 ```
 docker exec -it name bash
+```
+## Return to the terminal of the container
+```
+docker attach container_Name|container_ID
 ```
 
 ## Print out the log of running containers
@@ -70,4 +82,8 @@ docker build -t imageName pathOfDockFile(. is current folder)
 ## Docker-compose
 ```
 docker-compose up -d
+```
+## Create a docker image from a container
+```
+docker commit container_Name|container_ID name:tag
 ```
