@@ -87,3 +87,23 @@ docker-compose up -d
 ```
 docker commit container_Name|container_ID name:tag
 ```
+## Check volume
+```
+docker volume ls
+```
+## Check volume config
+```
+docker inspect volume "volume name"
+```
+## Check all process in container
+```
+docker-compose top
+```
+## Check docker-compose logs
+```
+docker-compose logs
+```
+## Cleanup/remove everything (images, containers, volumes & etc) in one go
+```
+docker system prune -a --volumes
+```
